@@ -1,38 +1,37 @@
-.App {
+.Intro{
+  height: 91.4vh;
+  position: relative;
+}
+.Intro::before{
+  content:'';
+  background-image: url('./books.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  opacity: .9;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.Intro .row{
+  position: relative;
+  padding: 0px 30px;
+  width: 100%;
+  justify-content: center;
+}
+.Intro .row .col{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.Intro .row .col p{
+  font-weight: bold;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.Intro .row .col h1{
+  color: white;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Intro .row .col button{
+  padding: 10px 15px;
+  border-radius: 25px;
 }
